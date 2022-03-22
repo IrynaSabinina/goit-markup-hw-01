@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+.logo-web {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
+
+.logo-studio {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: #212121;
+}
+. .list {
+  list-style: none;
+}
+
+.accent {
+  color: #2196f3;
+}
+
+.page-nav {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.about {
+  background-color: #f5f4fa;
+}
+
+.about-team {
+  background-color: #f5f4fa;
+}
+
+footer {
+  background-color: #2f303a;
+}
