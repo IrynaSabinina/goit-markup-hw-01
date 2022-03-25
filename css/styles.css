@@ -1,26 +1,32 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --bj-color: #ffffff;
+  --bj-hero: #2f303a;
+  --bj-about: #e5e5e5;
+  --bj-team: #f5f4fa;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 
 header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  background-color: #ffffff;
+  background-color: var(--bj-color);
 }
 
 .logo-web {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 31px;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-studio {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 31px;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .list {
@@ -38,11 +44,11 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .accent {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .mail {
@@ -57,12 +63,12 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .link:hover {
   text-decoration: underline;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .page-nav {
@@ -76,7 +82,7 @@ header {
 
 .page-nav > a:hover {
   text-decoration: underline;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /*
 .page-nav > a:active {
@@ -88,44 +94,39 @@ header {
 }
 
 .hero {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  background: #2f303a;
+  background: var(--bj-hero);
 }
 
 .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  color: var(--bj-color);
 }
 
 .hero-button {
   position: absolute;
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  left: 700px;
+  top: 430px;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
 }
 
 .hero-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
+  color: var(--bj-color);
 }
 
 .about {
-  background-color: #f5f4fa;
+  background-color: var(--bj-about);
 }
 
 .about-team {
-  background-color: #f5f4fa;
+  background-color: var(--bj-team);
 }
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--bj-hero);
 }
