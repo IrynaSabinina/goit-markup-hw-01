@@ -12,7 +12,16 @@ body {
 }
 
 header {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
   background-color: var(--bj-color);
+}
+
+.page-header {
+  float: left;
 }
 
 .logo-web {
@@ -51,7 +60,8 @@ header {
   color: var(--accent-color);
 }
 
-.mail {
+.mail ,
+.tell {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -59,16 +69,19 @@ header {
 }
 
 .tell {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
-.link:hover {
+.nav-list .link:hover,
+.page-header-registration .mail:hover,
+.page-header-registration .tell:hover {
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.page-header-registration .mail,
+.page-header-registration .tell {
+  cursor: pointer;
 }
 
 .page-nav {
@@ -94,7 +107,11 @@ header {
 }
 
 .hero {
-  background: var(--bj-hero);
+width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+background-color: var(--bj-hero);
 }
 
 .hero-title {
@@ -123,6 +140,33 @@ header {
   background-color: var(--bj-about);
 }
 
+.specifics-section {
+  float: left;
+  padding-left: 30px;
+}
+
+.specifics-title {
+  margin-top: 94px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.specifics-text {
+  width: 270px;
+  height: 75px;
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
 .about-team {
   background-color: var(--bj-team);
 }

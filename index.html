@@ -15,21 +15,27 @@
     
 </head>
 <body>
-    <header class="page-header">
-       <nav class="page-nav">
-            <a href="" class="page-nav-logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-
-        <ul class="nav-list list">
-            <li> <a href=""class="link accent">Студия</a></li>
-            <li> <a href=""class="link">Портфолио</a></li>
-            <li> <a href=""class="link">Контакты</a></li>
-        </ul>
-       </nav>
+    <header>
+        <div class="page-header">
+            <nav class="page-nav">
+                <a href="" class="page-nav-logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+        </div>
+        <div class="page-header"> 
+            <ul class="nav-list list">
+                <li> <a href="" class="link accent">Студия</a></li>
+                <li> <a href="" class="link">Портфолио</a></li>
+                <li> <a href="" class="link">Контакты</a></li>
+            </ul>
+        </div>
+           </nav>
+        <div class="page-header">
+             <ul class="page-header-registration list">
+                <li><a href="mailto:info@example.com" class="mail accent">info@example.com</a></li>
+                <li><a href="tell:+38 096 111 11 11" class="tell">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
+       
         
-        <ul class="page-header-registration list">
-            <li><a href="mailto:info@example.com" class="mail accent">info@example.com</a></li>
-            <li><a href="tell:+38 096 111 11 11" class="tell">+38 096 111 11 11</a></li>
-        </ul>
     </header>
     
     <main>
@@ -40,27 +46,37 @@
 
          <section class="specifics">
             <section>
-                <h2>Особенности</h2>
-            <ul>
-                <li>
-                    <h3>Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3>Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3>Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3>Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
+                <h2 hidden>Особенности</h2>
+            <ul class="list">
+                <div class="specifics-section">
+                    <li >
+                    <h3 class="specifics-title">Внимание к деталям</h3>
+                    <p class="specifics-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li> 
+                </div>
+                <div class="specifics-section">
+                    <li>
+                    <h3 class="specifics-title">Пунктуальность</h3>
+                    <p class="specifics-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                </div>
+                <div class="specifics-section">
+                    <li>
+                    <h3 class="specifics-title">Планирование</h3>
+                    <p class="specifics-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                </div>
+                <div class="specifics-section">
+                    <li>
+                        <h3 class="specifics-title">Современные технологии</h3>
+                        <p class="specifics-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </div>
+                
             </ul>
-            </section class="about">
+            </section>
     
+            
             <h2>Чем мы занимаемся</h2>
 
             <ul>
@@ -124,5 +140,6 @@
             </ul>
         </address>
     </footer>
+
 </body>
 </html>
