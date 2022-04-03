@@ -7,8 +7,25 @@
   --bj-about: #e5e5e5;
   --bj-team: #f5f4fa;
 }
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.header-box {
+  border: 1px solid #ECECEC;
+  align-items: baseline
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-box:hover,
+.header-box:active {
+  color: #2196f3;
 }
 
 header {
@@ -72,6 +89,11 @@ header {
   color: var(--primary-text-color);
 }
 
+.nav-list,
+.page-header-registration {
+display: flex;
+}
+
 .nav-list .link:hover,
 .page-header-registration .mail:hover,
 .page-header-registration .tell:hover {
@@ -115,7 +137,10 @@ background-color: var(--bj-hero);
 }
 
 .hero-title {
-  color: var(--bj-color);
+  position: absolute;
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-align: center;
 }
 
 .hero-button {
