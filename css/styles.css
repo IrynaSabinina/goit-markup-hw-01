@@ -15,9 +15,8 @@ body {
 header {
   box-sizing: border-box;
   width: 1600px;
-  display: flex;
+  height: 80px;
   border: 1px solid #ECECEC;
-  align-items: baseline;
   background-color: var(--bj-color);
 }
 
@@ -27,12 +26,8 @@ header {
 }
 
 .page-header {
+  display: flex;
   float: left;
-}
-
-.page-nav-logo {
-  padding: 24px 93px 25px 215px;
-  
 }
 
 .logo-web {
@@ -64,7 +59,7 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  padding: 32px;
+  margin-right: 50px;
   color: var(--title-text-color);
 }
 
@@ -81,19 +76,28 @@ header {
 }
 
 .tell {
+  margin-right: 215px;
+  margin-left: 50px;
   color: var(--primary-text-color);
-  padding: 32px 215px 32px 50px;
 }
 
 .mail {
-  padding: 32px 50px;
+   margin-left: 210px;
 }
 
 .nav-list,
 .page-header-registration {
-display: flex;
+  display: flex;
+  text-align: center;
+  margin: 0px;
+  padding-top: 32px;
 }
 
+.page-nav-logo{
+  margin: 24px 93px 25px 215px;
+}
+
+.page-nav-logo:hover,
 .nav-list .link:hover,
 .page-header-registration .mail:hover,
 .page-header-registration .tell:hover {
@@ -106,18 +110,9 @@ display: flex;
   cursor: pointer;
 }
 
-.page-nav > a {
+.page-nav-logo {
   text-decoration: none;
 }
-
-.page-nav > a:hover {
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-/*
-.page-nav > a:active {
-  color: #2196f3;
-}*/
 
 .nav-list > li {
   text-decoration: none;
@@ -150,14 +145,20 @@ display: flex;
   top: 430px;
   width: 200px;
   height: 50px;
-  margin: 350px 700px 200px 700px;
+  margin: 30px 700px 200px 700px;
+  border-radius: 4px;
   background: var(--accent-color);
+}
+
+.hero-button:hover {
+  cursor: pointer;
 }
 
 .hero-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  text-align: center;
   color: var(--bj-color);
 }
 
@@ -165,13 +166,27 @@ display: flex;
   background-color: var(--bj-about);
 }
 
+.specifics {
+  padding-bottom: 94px;
+}
+
+.specifics-list{
+  box-sizing: border-box;
+  width: 1170px;
+  height: 101px;
+  display: flex;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .specifics-section {
   float: left;
-  padding-left: 30px;
+  margin-right: 30px;
 }
 
 .specifics-title {
-  margin-top: 94px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -192,10 +207,122 @@ display: flex;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+.works {
+  box-sizing: border-box;
+  width: 1170px;
+  height: 386px;
+  padding-left: 200px;
+  }
+
+.works-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  margin-top:  94px;
+  margin-bottom: 50px;
+  margin-left: 427px;
+  color: var(--title-text-color);
+}
+
+.works-list {
+  display: flex;
+  align-items:  center;
+  margin: 0;
+}
+
+.works-img {
+  margin: 0;
+  margin-right: 30px;
+}
+
 .about-team {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 648px;
   background-color: var(--bj-team);
 }
 
-footer {
+.about-team-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 215px;
+}
+
+.person-card {
+  box-sizing: border-box;
+  width: 270px;
+  height: 368px;
+  background-color: var(--bj-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-right: 30px;
+}
+
+.team-name { 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 10px;
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 1600px;
+  height: 252px;
   background-color: var(--bj-hero);
+}
+
+.footer-logo {
+  padding-top: 60px;
+}
+
+.logo-studio-footer{
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--bj-color);
+}
+
+.footer-list {
+  margin: 0;
+  padding-left: 215px;
+  text-decoration: none;
+}
+
+.footer-list-adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-top: 20px;
+  color: var(--bj-color);
 }
