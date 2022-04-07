@@ -25,7 +25,7 @@ header {
     color: #2196f3;
 }
 
-.page-header {
+.page-nav {
     display: flex;
     float: left;
 }
@@ -373,9 +373,6 @@ header {
     background-color: var(--bj-team);
     border-radius: 4px;
     border: none;
-}
-
-.nav-button-text{
     padding: 6px 22px;
 }
 
